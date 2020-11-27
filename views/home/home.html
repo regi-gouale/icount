@@ -30,34 +30,7 @@
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr class="table-light">
-                            <th scope="row">1</th>
-                            <td>Achat huile moteur</td>
-                            <td>80 €</td>
-                            <td>
-                                <button class="btn btn-outline-warning mr-2">Modifier</button>
-                                <button class="btn btn-outline-danger">Supprimer </button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <th scope="row">2</th>
-                            <td>Achat joint vidange</td>
-                            <td>10 €</td>
-                            <td>
-                                <button class="btn btn-outline-warning mr-2">Modifier</button>
-                                <button class="btn btn-outline-danger">Supprimer </button>
-                            </td>
-                        </tr>
-                        <tr class="table-light">
-                            <th scope="row">3</th>
-                            <td>Achat filtre à huile</td>
-                            <td>20 €</td>
-                            <td>
-                                <button class="btn btn-outline-warning mr-2">Modifier</button>
-                                <button class="btn btn-outline-danger">Supprimer </button>
-                            </td>
-                        </tr>
+                    <tbody id="expensesTbody">
                     </tbody>
                 </table>
             </div>
@@ -73,32 +46,23 @@
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr class="table-light">
-                            <th scope="row">1</th>
-                            <td>Vidange voiture</td>
-                            <td>150 €</td>
-                            <td>
-                                <button class="btn btn-outline-warning mr-2">Modifier</button>
-                                <button class="btn btn-outline-danger">Supprimer </button>
-                            </td>
-                        </tr>
+                    <tbody id="incomesTbody">
                     </tbody>
                 </table>
             </div>
         </div>
-        
+
         <div class="row d-flex justify-content-center text-center">
             <div class="col-4">
                 <h5 class="mt-4 mb-3">BILAN FINANCIER <i class="fa fa-receipt"></i></h5>
-                <div class="bg-success text-light">+ 40 €</div>
+                <div id= "balanceSheet" class="text-light"> 0 €</div>
             </div>
         </div>
     </div>
 
-    <script src=""></script>
+    <script src="home.js"></script>
     <script>
-        window.jquery = window.$ = require('jqurey');
+        window.jquery = window.$ = require('jquery');
         require('bootstrap');
     </script>
 </body>
