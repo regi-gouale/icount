@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
+    <title>Ajout d'une nouvelle ligne</title>
+
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mt-5 mb-5">Ajout d'une nouvelle ligne</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <form id="addItem">
+                    <div class="form-group">
+                        <label for="itemLabel">Intitulé</label>
+                        <input type="text" class="form-control" name="label" id="itemLabel" placeholder="Quel est l'intitulé ?">
+                    </div>
+                    <div class="form-group">
+                        <label for="itemValue">Valeur</label>
+                        <input type="number" class="form-control" name="value" id="itemValue" placeholder="Quel est la valeur ?"> 
+                    </div>
+                    <button class="btn btn-dark" type="submit">AJOUTER</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.jquery = window.$ = require('jquery');
+        require('bootstrap');
+    </script>
+
+    <script src="addItem.js"></script>
+</body>
+</html>
